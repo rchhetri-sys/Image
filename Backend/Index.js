@@ -33,7 +33,7 @@ const storage = multer.diskStorage({
 
     const extension = path.extname(file.originalname);
 
-    const fileName = `${name.toLocaleLowerCase()}${extension}`;
+    const fileName = `${name.toLowerCase()}${extension}`;
 
     cb(null, fileName);
   },
@@ -80,7 +80,7 @@ app.get("/api/getImage", (req, res) => {
     const testPath = path.join(
       __dirname,
       "public",
-      `${name.toLocaleLowerCase()}${ext}`
+      `${name.toLowerCase()}${ext}`
     );
     if (fs.existsSync(testPath)) {
       imagePath = `${name.toLowerCase()}${ext}`;
