@@ -85,7 +85,7 @@
 }
 
 .upload-button {
-  width: 100%;
+  width: 150%;
   padding: 14px;
   background-color: #48bb78;
   color: #ffffff;
@@ -113,7 +113,7 @@
 }
 
 .image {
-  max-width: 100%;
+  max-width: 200%;
   max-height: 400px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
