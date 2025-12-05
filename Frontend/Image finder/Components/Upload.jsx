@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { styles } from '../styles/styles';
+import { styles } from '../src/styles/styles';
 
 function UploadSection({ onImageUpdate }) {
   const [uploadFile, setUploadFile] = useState(null);

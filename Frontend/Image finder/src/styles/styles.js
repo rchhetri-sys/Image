@@ -1,0 +1,98 @@
+export const styles = {
+  container: {
+    maxWidth: '1200px',
+    margin: '0 auto',
+    padding: '20px',
+    fontFamily: 'Arial, sans-serif',
+  },
+  section: {
+    marginBottom: '30px',
+    padding: '20px',
+    backgroundColor: '#f5f5f5',
+    borderRadius: '8px',
+    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+  },
+  heading: {
+    fontSize: '24px',
+    marginBottom: '20px',
+    color: '#333',
+  },
+  inputGroup: {
+    display: 'flex',
+    gap: '10px',
+    marginBottom: '20px',
+  },
+  formGroup: {
+    marginBottom: '15px',
+  },
+  label: {
+    display: 'block',
+    marginBottom: '5px',
+    fontWeight: 'bold',
+    color: '#555',
+  },
+  input: {
+    width: '100%',
+    padding: '10px',
+    fontSize: '16px',
+    border: '1px solid #ddd',
+    borderRadius: '4px',
+    boxSizing: 'border-box',
+  },
+  fileInput: {
+    width: '100%',
+    padding: '10px',
+    fontSize: '16px',
+    border: '1px solid #ddd',
+    borderRadius: '4px',
+    boxSizing: 'border-box',
+  },
+  searchButton: {
+    padding: '10px 20px',
+    fontSize: '16px',
+    backgroundColor: '#4CAF50',
+    color: 'white',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+  },
+  uploadButton: {
+    padding: '10px 20px',
+    fontSize: '16px',
+    backgroundColor: '#2196F3',
+    color: 'white',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+  },
+  imageContainer: {
+    marginTop: '20px',
+    textAlign: 'center',
+  },
+  image: {
+    maxWidth: '100%',
+    maxHeight: '400px',
+    borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+  },
+  messageBox: {
+    padding: '12px 20px',
+    marginBottom: '20px',
+    borderRadius: '4px',
+    fontSize: '16px',
+    fontWeight: 'bold',
+  },
+  successMessage: {
+    backgroundColor: '#d4edda',
+    color: '#155724',
+    border: '1px solid #c3e6cb',
+  },
+  errorMessage: {
+    backgroundColor: '#f8d7da',
+    color: '#721c24',
+    border: '1px solid #f5c6cb',
+  },
+};
+

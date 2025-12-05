@@ -1,5 +1,5 @@
 import React from 'react';
-import { styles } from '../styles/styles';
+import { styles } from '../src/styles/styles';
 
 function MessageBox({ message, type }) {
   if (!message) return null;

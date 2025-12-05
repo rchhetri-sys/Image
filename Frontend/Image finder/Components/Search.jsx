@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { styles } from '../styles/styles';
+import { styles } from '../src/styles/styles';
 
 function SearchSection({ onImageUpdate }) {
   const [searchName, setSearchName] = useState('');
@@ -17,11 +17,11 @@ function SearchSection({ onImageUpdate }) {
       const response = await fetch(`http://localhost:3000/api/getImage?name=${searchName}`);
       const data = await response.json();
       
-      if (data.image) {
-        setDisplayImage(`http://localhost:3000/${data.image}?t=${Date.now()}`);
+      if (data.success && data.imagePath) {
+        setDisplayImage(`http://localhost:3000/${data.imagePath}?t=${Date.now()}`);
         onImageUpdate(`Found image for "${searchName}"!`, 'success');
       } else {
-        onImageUpdate('Image not found', 'error');
+        onImageUpdate(data.message || 'Image not found', 'error');
       }
     } catch (error) {
       onImageUpdate('Error searching for image', 'error');
